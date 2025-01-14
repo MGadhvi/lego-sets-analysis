@@ -17,6 +17,40 @@ ENV/
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
+# Ignore Emacs backup files
+*~
+.#*
+*.elc
+
+# Ignore auto-save files
+# These files are created when you edit a file in Emacs
+# and are usually stored in the same directory as the file being edited.
+# They start with # and end with #
+# Example: #filename#
+# You can also ignore the auto-save files in a specific directory
+# by uncommenting the line below.
+# *#*
+
+# Ignore the .emacs.d directory if you don't want to track your Emacs configuration
+.emacs.d/
+
+# Ignore the local variables file
+# This file is created when you save local variables in a buffer
+# and is usually named .dir-locals.el
+.dir-locals.el
+
+# Ignore compiled Lisp files
+*.elc
+
+# Ignore the generated files from package installations
+# If you are using package.el, you might want to ignore the following
+elpa/
+
+# Ignore any other temporary files
+*.log
+*.tmp
+*.temp
+
 # IDE and editor files
 .vscode/
 .idea/
