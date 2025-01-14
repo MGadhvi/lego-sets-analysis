@@ -21,7 +21,7 @@ This project analyzes LEGO sets and their associated themes to determine the mos
 
 ** Database Schema
 
-#+begin_sql
+#+begin_src sql
 create table if not exists themes (
   id smallint primary key,
   name varchar(64),
@@ -110,7 +110,7 @@ create table if not exists inventory_minifigs (
   foreign key(inventory_id) references inventories(id),
   foreign key(fig_num) references minifigs(set_num)
 );
-#+end_sql
+#+end_src
 ** Installation
 1. Clone the repository:
    #+BEGIN_SRC bash
